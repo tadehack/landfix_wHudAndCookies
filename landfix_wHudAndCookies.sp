@@ -454,7 +454,7 @@ public Action Command_LandFixHud(int client, int args)
 		return Plugin_Handled;
 	
 	gB_UseHud[client] = !gB_UseHud[client];
-	Shavit_PrintToChat(client, "Landfix Hud: %s", gB_UseHud[client] ? "On" : "Off");
+	Shavit_PrintToChat(client, "Landfix Hud: %s", gB_UseHud[client] ? "\x078efeffOn" : "\x07a082ffOff");
 	
 	// Save the new HUD enabled state in the cookie
 	char buffer[2];
