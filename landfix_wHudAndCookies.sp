@@ -200,11 +200,6 @@ public void OnClientPutInServer(int client)
     OnClientCookiesCached(client);
 }
 
-public void OnClientDisconnect(int client)
-{
-	StopHudTimer(client);
-}
-
 public Action OnPlayerRunCmd(int client, int &buttons)
 {
 	if(!IsClientConnected(client) || !IsPlayerAlive(client) || IsFakeClient(client) || !gB_Enabled[client])
